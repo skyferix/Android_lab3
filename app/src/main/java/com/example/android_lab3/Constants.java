@@ -7,6 +7,7 @@ public class Constants {
     public static final String USER_MODERATE_URL = ADDRESS + "user/moderate/";
     public static final String USER_PARTICIPATE_URL = ADDRESS + "user/participate/";
     public static final String COURSE_ALL = ADDRESS + "course/all";
+    public static final String COURSE_BY_ID = ADDRESS + "course/";
     public static final String PROJECT_ALL_URL = ADDRESS + "project/getAll";
     public static final String PROJECT_DELETE = ADDRESS + "project/deleteProject/";
     public static final String TASKS_BY_PROJECT_URL = ADDRESS + "task/byProject/";
