@@ -42,22 +42,6 @@ public class RESTController {
         conn.setRequestProperty("Content-Type", "application/json; utf-8");
         conn.setRequestProperty("Accept", "application/json");
         conn.setDoOutput(true);
-//        try(OutputStream os = conn.getOutputStream()){
-//            byte[] input = postDataParams.getBytes("utf-8");
-//            os.write(input,0, input.length);
-//        }
-//
-//        StringBuilder response = new StringBuilder();
-//
-//        try(BufferedReader br = new BufferedReader(
-//           new InputStreamReader(conn.getInputStream(), "utf-8"))){
-//            String responseLine = null;
-//            while((responseLine = br.readLine()) != null){
-//                response.append(responseLine.trim());
-//            }
-//        }
-//        System.out.println(response.toString());
-//        return response.toString();
         outputStream = conn.getOutputStream();
         bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
         bufferedWriter.write(postDataParams);

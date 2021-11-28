@@ -27,6 +27,9 @@
         <activity android:name=".MainPage"
                   android:exported="true">
         </activity>
+        <activity android:name=".SingleCourse"
+                  android:exported="true">
+        </activity>
     </application>
 
 </manifest>

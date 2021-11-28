@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import helpers.Helper;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, MainPage.class);
                         ((Conf) this.getApplication()).setUserId(Integer.parseInt(response));
                         startActivity(intent);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Errors while authenticating", Toast.LENGTH_LONG).show();
                     }
                 });
             } catch (IOException e) {

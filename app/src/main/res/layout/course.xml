@@ -7,7 +7,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:gravity="center">
+            android:layout_height="match_parent" android:gravity="bottom">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -58,8 +58,8 @@
             </LinearLayout>
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="410dp"
-                android:layout_height="420dp"
+                android:layout_width="match_parent"
+                android:layout_height="422dp"
                 android:id="@+id/recyclerView"
                 android:layout_marginBottom="1dp"
         >
