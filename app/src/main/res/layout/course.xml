@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" android:gravity="center|top">
+            <TextView
+                    android:text="Courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView3"
+                    android:textSize="48sp"
+            />
+            <SearchView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/search" android:queryHint="Search Here"
+            />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" android:gravity="center">
+                <Button
+                        android:text="Own"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_height="wrap_content" android:id="@+id/own"
+                />
+                <Button
+                        android:text="Participate"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_height="wrap_content" android:id="@+id/participte"
+                />
+                <Button
+                        android:text="Moderate"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_height="wrap_content" android:id="@+id/moderate"
+                />
+                <Button
+                        android:text="all"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_height="wrap_content" android:id="@+id/all"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="410dp"
+                android:layout_height="420dp"
+                android:id="@+id/recyclerView"
+                android:layout_marginBottom="1dp"
+        >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
